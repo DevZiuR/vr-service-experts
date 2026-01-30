@@ -1,0 +1,55 @@
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import About from "@/components/About";
+import Gallery from "@/components/Gallery";
+import Locations from "@/components/Locations";
+import EmergencyCall from "@/components/EmergencyCall";
+import Reviews from "@/components/Reviews";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import RevealOnScroll from "@/components/RevealOnScroll";
+
+import MobileCTA from "@/components/MobileCTA";
+import FAQ from "@/components/FAQ";
+
+const Index = () => {
+  return (
+    <div className="min-h-screen bg-background pb-24 lg:pb-0">
+      <Header />
+      <main>
+        <RevealOnScroll animation="fade-in">
+          <Hero />
+        </RevealOnScroll>
+        <RevealOnScroll animation="slide-up">
+          <Services />
+        </RevealOnScroll>
+        <RevealOnScroll animation="slide-up">
+          <About />
+        </RevealOnScroll>
+        <RevealOnScroll animation="slide-up">
+          <Gallery />
+        </RevealOnScroll>
+        <RevealOnScroll animation="slide-up">
+          <Locations />
+        </RevealOnScroll>
+        <RevealOnScroll animation="slide-up">
+          <EmergencyCall />
+        </RevealOnScroll>
+        <Reviews />
+
+        <RevealOnScroll animation="slide-up">
+          <FAQ />
+        </RevealOnScroll>
+
+        <RevealOnScroll animation="slide-up">
+          <Contact />
+        </RevealOnScroll>
+      </main>
+      <Footer />
+      <MobileCTA />
+    </div>
+  );
+};
+
+export default Index;
