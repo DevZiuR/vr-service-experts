@@ -20,16 +20,16 @@ const MobileCTA = () => {
     };
 
     return (
-        <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden flex h-16 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
+        <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden flex h-14 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
             <Button
                 onClick={scrollToContact}
-                className="flex-1 bg-black hover:bg-[#639CD9]/90 text-white font-black font-montserrat uppercase h-full rounded-none text-base sm:text-lg border-r border-black/10"
+                className="flex-1 bg-black hover:bg-[#639CD9]/90 text-white font-bold font-montserrat uppercase h-full rounded-none text-xs sm:text-sm border-r border-black/10"
             >
                 Get A Free Quote
             </Button>
             <Button
                 onClick={handleCall}
-                className="flex-1 bg-black hover:bg-[#639CD9]/90 text-white font-black font-montserrat uppercase h-full rounded-none text-base sm:text-lg"
+                className="flex-1 bg-black hover:bg-[#639CD9]/90 text-white font-bold font-montserrat uppercase h-full rounded-none text-xs sm:text-sm"
             >
                 Call For Service
             </Button>

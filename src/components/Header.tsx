@@ -79,7 +79,7 @@ const Header = () => {
       </div>
 
       {/* Main Navbar */}
-      <div className={`w-full bg-white shadow-sm transition-all duration-300 ${scrolled ? "py-6" : "py-8"}`}>
+      <div className={`w-full bg-black md:bg-white shadow-sm transition-all duration-300 ${scrolled ? "py-3 md:py-6" : "py-3 md:py-8"}`}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-4 sm:mb-0">
           <div className="flex items-center justify-between">
             {/* Logo */}
@@ -87,7 +87,7 @@ const Header = () => {
               <img
                 src="https://i.imgur.com/8pm2i1y.jpeg"
                 alt="VR Service Experts"
-                className="h-28 sm:h-24 w-auto object-contain transition-all duration-300 rounded-lg"
+                className="h-14 md:h-24 w-auto object-contain transition-all duration-300 rounded-lg"
               />
             </div>
 
@@ -160,9 +160,9 @@ const Header = () => {
                 variant="ghost"
                 size="icon"
                 onClick={() => setIsOpen(!isOpen)}
-                className="text-black"
+                className="text-white md:text-black"
               >
-                {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
               </Button>
             </div>
           </div>
@@ -171,7 +171,7 @@ const Header = () => {
 
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 top-[88px] sm:top-[70px] bg-black z-40 lg:hidden animate-fade-in border-t border-gray-800">
+        <div className="fixed inset-0 top-[64px] bg-black z-40 lg:hidden animate-fade-in border-t border-gray-800">
           <div className="flex flex-col p-6 space-y-6 h-full overflow-y-auto">
             <div className="space-y-4">
               {navLinks.map((link) => {
