@@ -31,7 +31,7 @@ const BackToTop = () => {
             {isVisible && (
                 <button
                     onClick={scrollToTop}
-                    className="fixed bottom-6 right-6 lg:bottom-8 lg:right-8 z-50 group"
+                    className="fixed bottom-20 right-4 lg:bottom-8 lg:right-8 z-40 group"
                     aria-label="Back to top"
                 >
                     {/* Outer glow ring */}

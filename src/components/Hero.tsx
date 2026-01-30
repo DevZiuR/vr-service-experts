@@ -29,7 +29,7 @@ const Hero = () => {
             <span className="inline-block text-primary font-bold tracking-wide text-sm font-inter uppercase mb-2">
               VR SERVICE EXPERTS
             </span>
-            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-montserrat leading-[1] text-black uppercase">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-montserrat leading-[1] text-black uppercase">
               Fast, Reliable <span className="italic font-playfair font-medium text-primary">Appliance & HVAC</span> <br className="hidden sm:block" />
               <span className="sm:hidden"> </span>Repair Across South Florida
             </h1>
